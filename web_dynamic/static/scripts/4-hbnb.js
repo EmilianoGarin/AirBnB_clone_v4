@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
       // Realiza una solicitud POST a places_search con la lista de amenidades
       $.ajax({
           type: "POST",
-          url: "http://0.0.0.0:5001/api/v1/places_search/",
+          url: "http://localhost:5001/api/v1/places_search/",
           contentType: 'application/json',
           data: JSON.stringify({ amenities: amenityIDs }), // Envía los IDs de las amenidades seleccionadas
           success: function (data) {
